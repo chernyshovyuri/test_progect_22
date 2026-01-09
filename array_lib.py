@@ -24,5 +24,22 @@ def prod_1d(arr: list) -> float | bool:
 
 
 
+def mean_1d(arr: list) -> float | bool:
+
+    if len(arr) == '':
+        return False
+
+    summ = 0
+    count = 0
+
+    for numb in arr:
+        summ += numb
+        count += 1
+
+    rezult = summ / count
+
+    return rezult
+
+
 
 
