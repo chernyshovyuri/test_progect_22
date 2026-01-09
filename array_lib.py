@@ -56,4 +56,21 @@ def max_1d(arr: list) -> float | bool:
 
 
 
+def min_1d(arr: list) -> float | bool:
+
+    if len(arr) == '':
+        return False
+
+    min = arr[0]
+
+    for i in range(1, len(arr)):
+
+        if arr[i] < min:
+            min = arr[i]
+
+    return min
+
+
+
+
 
