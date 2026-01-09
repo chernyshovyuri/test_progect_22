@@ -41,5 +41,19 @@ def mean_1d(arr: list) -> float | bool:
     return rezult
 
 
+def max_1d(arr: list) -> float | bool:
+
+    if len(arr) == '':
+        return False
+
+    max = arr[0]
+
+    for i in range (1, len(arr)):
+        if arr[i] > max:
+            max = arr[i]
+
+    return max
+
+
 
 
