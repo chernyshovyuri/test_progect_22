@@ -54,3 +54,63 @@ def max_1d(arr: list) -> float | bool:
 
     return max
 
+def min_1d(arr: list) -> float | bool:
+
+    if len(arr) == '':
+        return False
+
+    min = arr[0]
+
+    for i in range(1, len(arr)):
+
+        if arr[i] < min:
+            min = arr[i]
+
+    return min
+
+
+def summ_2d(matrix: list) -> float | bool:
+
+    if not matrix:
+        return False
+
+    summ = 0
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            summ += matrix[i][j]
+
+    return summ
+
+
+
+def prod_2d(matrix: list) -> float | bool:
+
+    if not matrix:
+        return False
+
+    prod = 0
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            prod = prod * matrix[i][j]
+
+    return prod
+
+
+def men_2d(matrix: list) -> float | bool:
+
+    if not matrix:
+        return False
+
+    summ = 0
+    counret = 0
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            summ += matrix[i][j]
+            counret = counret + 1
+
+    rezult = summ / counret
+
+    return rezult
